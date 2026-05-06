@@ -9,5 +9,6 @@
     {{ form|crispy }}
 
     <input class="btn btn-primary" type="submit" value="Submit">
+    <a href="{{ request.META.HTTP_REFERER|default:'/manufacturers/' }}" class="btn btn-primary">Cancel</a>
   </form>
 {% endblock %}
